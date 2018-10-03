@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {Platform, StyleSheet, Text, View,TouchableOpacity} from 'react-native';
+import MyButton from '../MyButton'
 
 
 
@@ -10,16 +11,8 @@ export default class App extends Component<Props> {
     return (
       <View style={styles.container}>
         <View style={{flex:1,justifyContent:'center',alignItems:'center'}}>
-        <TouchableOpacity onPress={()=>navigate('Register')}>
-                <View style={{backgroundColor:'#BBA0CA',width:250,height:30,alignItems:'center',justifyContent:'center',marginTop:10,borderRadius:16}}>                    
-                     <Text style={{fontSize:25,fontFamily:'Cochin',fontWeight:'bold'}}>Login</Text>
-                </View>
-        </TouchableOpacity>
-        <TouchableOpacity onPress={()=>navigate('Register')}>
-                <View style={{backgroundColor:'#BBA0CA',width:250,height:30,alignItems:'center',justifyContent:'center',marginTop:10,borderRadius:16}}>                    
-                     <Text style={{fontSize:25,fontFamily:'Cochin',fontWeight:'bold'}}>Register</Text>
-                </View>
-            </TouchableOpacity>
+        <MyButton onPress={()=>navigate('Login')} Text={'Login'}></MyButton>
+        <MyButton onPress={()=>navigate('Register')} Text={'Register'}></MyButton>
         </View>
       </View>
     );
@@ -29,6 +22,6 @@ export default class App extends Component<Props> {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor:'#BFE0F7'
+    backgroundColor:'#062E54'
   }
 });
