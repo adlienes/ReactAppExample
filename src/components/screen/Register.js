@@ -5,6 +5,13 @@ import MyButton from '../MyButton/';
 
 export default class Register extends React.Component{
 
+    static navigationOptions = {
+        title: 'Register Page',
+        headerTitleStyle: {
+          fontWeight: 'bold',
+        },
+      };
+
     render(){
 
         return(
@@ -20,7 +27,7 @@ export default class Register extends React.Component{
                 <MyTextInput placeholder={'Please Enter Name'}></MyTextInput>
                 <MyTextInput placeholder={'Please Enter Surname'}></MyTextInput>
                 <MyTextInput placeholder={'Please Enter E-Mail'}></MyTextInput>
-                <MyTextInput placeholder={'Please Enter Password'}></MyTextInput>
+                <MyTextInput placeholder={'Please Enter Password'} secureTextEntry={true}></MyTextInput>
                 <View style={{justifyContent:'center',alignItems:'center'}}>
                 <MyButton Text={'Register'}></MyButton>
                 </View>

@@ -4,8 +4,13 @@ import MyButton from '../MyButton'
 
 
 
-type Props = {};
-export default class App extends Component<Props> {
+export default class App extends React.Component {
+    static navigationOptions = {
+        headerStyle: {
+          backgroundColor: '#062E54',
+        },
+      };
+
   render() {
       const {navigate}=this.props.navigation;
     return (

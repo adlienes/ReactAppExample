@@ -6,9 +6,12 @@ import MyButton from '../MyButton/';
 
 export default class Login extends React.Component{
 
-    static navigationOption={
-        title:'Login Page',
-    };
+    static navigationOptions = {
+        title: 'Login Page',
+        headerTitleStyle: {
+          fontWeight: 'bold',
+        },
+      };
 
     render(){
 
@@ -23,7 +26,7 @@ export default class Login extends React.Component{
                 </View>
                 <View style={{flex:1}}>
                     <MyTextInput placeholder={'Please Enter E-Mail'}></MyTextInput>
-                    <MyTextInput placeholder={'Please Enter Password'}></MyTextInput>
+                    <MyTextInput secureTextEntry={true} placeholder={'Please Enter Password'}></MyTextInput>
                     <View style={{justifyContent:'center',alignItems:'center'}}>
                     <MyButton Text={'Login'}></MyButton>
                     </View>
