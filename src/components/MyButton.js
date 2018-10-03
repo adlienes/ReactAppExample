@@ -6,11 +6,9 @@ export default class MyButton extends React.Component{
     render(){
 
         return(
-            <TouchableOpacity style={{flex:1}}>
-                <View style={{flex:1,justifyContent:'center',alignItems:'center'}}>
-                <View style={{backgroundColor:'blue',width:200,height:30,alignItems:'center',justifyContent:'center'}}>                    
-                     <Text style={{fontSize:20}}>{this.props.Text}</Text>
-                </View>
+            <TouchableOpacity onPress={this.props.onPress}>
+                <View style={{backgroundColor:'#BBA0CA',width:250,height:30,alignItems:'center',justifyContent:'center',marginTop:10,borderRadius:16}}>                    
+                     <Text style={{fontSize:25,fontFamily:'Cochin',fontWeight:'bold'}}>{this.props.Text}</Text>
                 </View>
             </TouchableOpacity>
 
