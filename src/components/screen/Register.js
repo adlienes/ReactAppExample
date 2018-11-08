@@ -23,6 +23,7 @@ export default class Register extends React.Component{
                     source={require('../img/usericon.png')}></Image>
                 </View>
             </View>
+            <View style={{backgroundColor:'white',height:2,marginBottom:30}}></View>
             <View style={{flex:1}}>
                 <MyTextInput placeholder={'Please Enter Name'}></MyTextInput>
                 <MyTextInput placeholder={'Please Enter Surname'}></MyTextInput>

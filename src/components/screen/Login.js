@@ -24,6 +24,7 @@ export default class Login extends React.Component{
                         source={require('../img/usericon.png')}></Image>
                     </View>
                 </View>
+                <View style={{backgroundColor:'white',height:2,marginBottom:30}}></View>
                 <View style={{flex:1}}>
                     <MyTextInput placeholder={'Please Enter E-Mail'}></MyTextInput>
                     <MyTextInput secureTextEntry={true} placeholder={'Please Enter Password'}></MyTextInput>
